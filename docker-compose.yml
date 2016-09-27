@@ -1,0 +1,11 @@
+web:
+  build: .
+  command: python /webapp/simple_tasklist.py
+  ports:
+    - "5000:5000"
+  volumes:
+    - ./webapp:/webapp
+  links:
+    - db
+db:
+  image: mongo:3.2.9
