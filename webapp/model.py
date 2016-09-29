@@ -1,7 +1,7 @@
 from mongoengine import *
 import os
 
-connect('simple_tasklist', host=os.environ['DB_PORT_27017_TCP_ADDR'])
+connect('simple_tasklist', host='db')
 
 
 class Task(Document):

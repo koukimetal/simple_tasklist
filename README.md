@@ -2,10 +2,9 @@
 
 * $ docker-compose build
 * $ docker-compose up
-* Access http://localhost:5000
+* Access http://localhost:5000 or http://0.0.0.0:5000
 
 **TODO**
 
-* Understand what is DB_PORT_27017_TCP_ADDR
 * Implement easy restart
-* Find the way to keep mongodb
+* figure out how to keep mongo data correctly
