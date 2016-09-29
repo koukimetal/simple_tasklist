@@ -9,5 +9,7 @@ services:
       - ./webapp:/webapp
     links:
       - db
+    extra_hosts:
+      - "myhost:172.30.254.1"
   db:
     image: mongo:3.2.9

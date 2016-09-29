@@ -23,4 +23,7 @@ def edit_tasks():
     return show_tasks()
 
 if __name__ == '__main__':
+    import pydevd
+    pydevd.settrace('172.30.254.1', port=5678, stdoutToServer=True, stderrToServer=True)
+
     app.run(host='0.0.0.0')
