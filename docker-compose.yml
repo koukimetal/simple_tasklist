@@ -10,6 +10,6 @@ services:
     links:
       - db
     extra_hosts:
-      - "myhost:172.30.254.1"
+      - "debug_host:${DOCKER0_IP}" # This is for debugger
   db:
     image: mongo:3.2.9
