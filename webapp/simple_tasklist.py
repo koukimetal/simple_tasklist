@@ -4,7 +4,7 @@ from webapp.model import Task
 from jinja2 import Environment, PackageLoader
 
 app = Flask(__name__)
-env = Environment(loader=PackageLoader('webapp', 'templates'))
+env = Environment(autoescape=True, loader=PackageLoader('webapp', 'templates'))
 
 
 @app.route('/', methods=['GET'])
